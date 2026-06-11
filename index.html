@@ -419,7 +419,7 @@
     <p class="tagline">“I turn messy data into decisions — with Python, SQL, and Power BI”</p>
     <div class="button-group">
       <button class="btn-primary" id="viewProjectsBtn">📊 View Projects</button>
-      <button class="btn-outline" id="heroResumeBtn">📄 Download Resume</button>
+      <a href="Anuj_Singh_Bhardwaj_resume_DA.pdf" download class="btn-outline">📄 Download Resume</a>
     </div>
   </section>
 
@@ -533,7 +533,7 @@
     <div class="resume-card">
       <h3>📄 Want the full picture?</h3>
       <p>Detailed resume including work experience, certifications &amp; academic background.</p>
-      <button class="btn-primary" id="downloadResumeSectionBtn">⬇️ Download Resume (PDF)</button>
+      <a href="Anuj_Singh_Bhardwaj_resume_DA.pdf" download class="btn-primary">⬇️ Download Resume (PDF)</a>
     </div>
   </section>
 
@@ -607,8 +607,6 @@ GitHub: github.com/Anuj-Singh-Bhardwaj
   // Attach resume download listeners
   const heroResumeBtn = document.getElementById('heroResumeBtn');
   const sectionResumeBtn = document.getElementById('downloadResumeSectionBtn');
-  if (heroResumeBtn) heroResumeBtn.addEventListener('click', downloadResumePDF);
-  if (sectionResumeBtn) sectionResumeBtn.addEventListener('click', downloadResumePDF);
 
   // View projects button - smooth scroll to projects section
   const viewProjectsBtn = document.getElementById('viewProjectsBtn');
